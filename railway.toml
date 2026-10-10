@@ -1,0 +1,10 @@
+# Shared by every service in this repo. Each service picks its Dockerfile via
+# the RAILWAY_DOCKERFILE_PATH variable (landing/Dockerfile, apps/Dockerfile).
+[build]
+builder = "DOCKERFILE"
+
+[deploy]
+healthcheckPath = "/healthz"
+healthcheckTimeout = 30
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
