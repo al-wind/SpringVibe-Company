@@ -7,7 +7,10 @@
   <meta name="description" content="SpringVibe Cafe: where ideas are born. A startup turning bold ideas into real products — for the better of the world and the people in it." />
   <link rel="canonical" href="https://springvibe.cafe/" />
   <meta name="theme-color" content="#2A9D5C" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='10' fill='%232A9D5C'/%3E%3Cg transform='translate(8 8)'%3E%3Cpath d='M10 2C10 2 4 6 4 12C4 15.3 6.7 18 10 18C13.3 18 16 15.3 16 12C16 6 10 2 10 2Z' fill='white' opacity='0.9'/%3E%3Cpath d='M10 8V14' stroke='%232A9D5C' stroke-width='1.5' stroke-linecap='round'/%3E%3Ccircle cx='15.5' cy='4.5' r='1.5' fill='white' opacity='0.7'/%3E%3C/g%3E%3C/svg%3E" />
+  <link rel="icon" href="/assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 
   <!-- Open Graph / social previews -->
   <meta property="og:type" content="website" />
@@ -15,7 +18,12 @@
   <meta property="og:url" content="https://springvibe.cafe/" />
   <meta property="og:title" content="SpringVibe Cafe — Where Ideas are born" />
   <meta property="og:description" content="A startup turning bold ideas into real products — for the better of the world and the people in it." />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://springvibe.cafe/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="SpringVibe mascot — a smiling green sprout" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://springvibe.cafe/assets/og-image.png" />
   <meta name="twitter:title" content="SpringVibe Cafe — Where Ideas are born" />
   <meta name="twitter:description" content="A startup turning bold ideas into real products — for the better of the world and the people in it." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,17 +69,11 @@
     }
 
     .logo-mark {
-      width: 36px;
-      height: 36px;
-      background: var(--green);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      height: 44px;
+      width: auto;
+      display: block;
       flex-shrink: 0;
     }
-
-    .logo-mark svg { display: block; }
 
     .logo-name {
       font-size: 1.1rem;
@@ -337,14 +339,7 @@
   <header>
     <nav>
       <a class="logo" href="/">
-        <div class="logo-mark">
-          <!-- Leaf + spark icon -->
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 2C10 2 4 6 4 12C4 15.3 6.7 18 10 18C13.3 18 16 15.3 16 12C16 6 10 2 10 2Z" fill="white" opacity="0.9"/>
-            <path d="M10 8V14" stroke="#2A9D5C" stroke-width="1.5" stroke-linecap="round"/>
-            <circle cx="15.5" cy="4.5" r="1.5" fill="white" opacity="0.7"/>
-          </svg>
-        </div>
+        <img class="logo-mark" src="/assets/mascot-240.png" alt="SpringVibe mascot" width="38" height="44" />
         <span class="logo-name">SpringVibe<span class="logo-tld">.cafe</span></span>
       </a>
       <a class="nav-link" href="mailto:hello@springvibe.cafe">Contact</a>
